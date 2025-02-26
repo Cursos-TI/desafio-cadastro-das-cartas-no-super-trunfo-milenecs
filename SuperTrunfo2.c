@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-        /// precisa desses include para o time funcionar
+
 int main () {
     int op;
     char provincia1 [15];
@@ -15,6 +14,7 @@ int main () {
     printf ("2. Regras \n");
     printf ("3. Sair \n");
     scanf ("%d", &op);
+   
  switch (op){
       case 1:
         printf("Vamos começar \n Digite Sua Provincia: \n");
@@ -74,6 +74,7 @@ int main () {
         printf ("8. Densidade Populacional \n");
         printf ("9. PIB per Capta \n");
         printf ("10. Poder \n");
+        printf ("0. Para Sair\n");
         scanf ("%d", &op);
            case 4:
            printf ("A Provincia Com a Populacao maior foi do ");
@@ -143,19 +144,19 @@ int main () {
             printf("Jogador 2!\n");
             } else if (poder1 == poder2) {
             printf("Empate! \n");
-            }
+        }  
         break;
 case 2:
     printf ("O Super Trunfo é um jogo bem simples\n Começe digitando o nome e o numero da sua provencia, e as informacoes \n Ganha aquele que tiver o maior valor \n");
-        
-        break;
+    break;
 case 3:
-            printf ("Ate mais, Origada por jogar\n");
-       break;
-            default:
+     printf ("Ate mais, Origada por jogar\n");
+    break;
+     default:
     printf ("Opcao invalida");
-              break;
+    break;
      }
+    
  return 0;
     
     }
